@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sebastian S. Feger</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#header').load("/common-elements/header.html");
+            $('#overview-container').load("/common-elements/profile-overview.html");
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="pages.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Header is loaded into #header from reusable header.html -->
+    <div id="header"></div>
+
+    </div>
+
+    <div class="container-fluid title-container">
+        <h2 class="page-title">Contact</h2>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 top-text-container large-text-container">
+
+                Please feel free to contact me. I welcome scientific discussions, 
+                as well as requests to consult on a variety of topics within human-centered 
+                design and software engineering, including, but not limited to:
+
+                <ul id="topic-list">
+                    <li>Design of motivating and rewarding applications</li>
+                    <li>Gamification</li>
+                    <li>General User Experience (UX) design and evaluation</li>
+                    <li>Knowledge management and sharing</li>
+                    <li>Open Science</li>
+                </ul>
+                
+                I am looking forward to hearing from you.
+
+                <div class="contact-item">
+                    <a href="mailto:contact@sebastian-feger.com">
+                        <div class="contact-button">
+                            <i class="fa fa-envelope smaller-fa-icons"></i>  
+                            <span class="button-descriptor">E-Mail</span>          
+                        </div>
+                    </a>
+                    <a class="contact-item-plain" href="mailto:contact@sebastian-feger.com">contact@sebastian-feger.com</a>
+                </div>
+                <div class="contact-item">
+                    <a href="skype:live:sebastian.feger_1?add">
+                        <div class="contact-button">
+                            <i class="fab fa-skype smaller-fa-icons"></i>  
+                            <span class="button-descriptor">Skype
+                            </span>          
+                        </div>
+                    </a>
+                    <a class="contact-item-plain" href="skype:live:sebastian.feger_1?add">live:sebastian.feger_1</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div id="contact-profile-container">
+
+                    <img src="/images/portrait_closer.jpg" id="profile-image-contact"></img>
+
+                    <!-- Profile overview is loaded into 
+                            #overview-container from reusable profile-overview.html -->
+
+                    <div id="overview-container"></div>
+                </div>
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="container-fluid" id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>

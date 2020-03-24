@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sebastian S. Feger</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#header').load("common-elements/header.html");
+            $('#overview-container').load("common-elements/profile-overview.html");
+
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Header is loaded into #header from reusable header.html -->
+    <div id="header"></div>
+
+    </div>
+
+    <div class="container-fluid" id="content-container">
+
+        <div class="row" id="portrait-row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-center" style="height: 320px;">
+                    <img src="images/portrait.jpg" height="100%" />
+                </div>
+            </div>
+            <div class="col-md-7"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-center">
+
+                    <!-- Profile overview is loaded into 
+                            #overview-container from reusable profile-overview.html -->
+
+                    <div id="overview-container"></div>
+                </div>
+            </div>
+            <div class="col-md-7">
+
+                <div class="container-fluid top-text-container">
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="large-text-container">
+                                Sebastian Feger is a PhD candidate at LMU Munich.
+                                His doctoral research is focused on supporting and motivating
+                                open and reproducible science through the design of
+                                interactive tools. As part of his studies, Sebastian specialized
+                                in gamification and knowledge management. Sebastian conducted three years of his
+                                doctoral research at CERN, the European Organization for
+                                Nuclear Research. CERN is a leading laboratory in one of the
+                                most data-intensive branches of science. Sebastian received
+                                the German federal Wolfgang Gentner Scholarship for his
+                                research. Before embarking on his PhD journey, Sebastian
+                                supported SAP Research Switzerland in an EU project on
+                                infrastructure for autonomous vehicles and worked as a CERN
+                                fellow on the design and implementation of a software framework 
+                                for controlling and testing radiation-resistant hardware chips.
+                            </div>
+                        </div>
+                        <div class="col-xl-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>

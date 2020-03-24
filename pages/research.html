@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sebastian S. Feger</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#header').load("/common-elements/header.html");
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="pages.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Header is loaded into #header from reusable header.html -->
+    <div id="header"></div>
+
+    </div>
+
+    <div class="container-fluid title-container">
+        <h2 class="page-title">Research</h2>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 top-text-container large-text-container">
+                My work in <b>Human-Computer Interaction (HCI)</b> is focused on two
+                major research threads: 1) the design of motivating and rewarding
+                applications through gamification; and 2) (scientific) knowledge and
+                resource management and sharing. I am experienced in applying qualitative
+                methods to map practices and needs of users, designing prototypes, implementing
+                production tools, and conducting mixed-method evaluations. Before I became an HCI researcher, I
+                developed
+                and evaluated software frameworks for controlling and testing custom-designed
+                hardware chips. On this page, I provide an overview of my various research
+                threads and pointers to corresponding work.
+                <!-- , and examples of how I applied the
+                    research findings in the design of software systems. -->
+            </div>
+
+            <div class="col-md-2">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 large-text-container">
+                <h5>Gamification: motivating and rewarding applications</h5>
+
+                <p>
+                    Gamification refers to the use of game elements to motivate and reward
+                    activities in non-game contexts. Points, badges, and leaderboards are some
+                    of the most often used game elements. Typical applications that many people are
+                    familiar with include sports apps ("Congratulations, this was your longest bike
+                    ride ever!") and forums ("Your answers were rated helpful by 20 people"). Gamification
+                    has also proven to motivate workers and make repetitive tasks more enjoyable. However,
+                    merely adding game elements to drive business goals risks to alienate users. Gamification
+                    design needs to be based on an in-depth knowledge of system users, the
+                    application context, and the overall socio-technical framework in which gamified systems
+                    are deployed.
+                </p>
+
+                <p>
+                    I studied how gamification can be used to motivate documentation and sharing
+                    in science. This is important because research documentation and sharing are
+                    usually perceived as unrewarding activities. At the time, we knew very little of
+                    design requirements for gamification in the scientific workplace. We hypothesized
+                    that scientists, who are trained in critical thinking, would be particularly
+                    alienated by any system that made us of meaningless game design elements. Thus,
+                    we first conducted a variety of user-centered research activities with scientists in
+                    particle physics to map their expectations and socio-technical frameworks. We
+                    documented target behaviors that our gamified research data management system
+                    should support, and designed two gamified service prototypes that made use of
+                    different game design elements and design strategies. We reported our various
+                    design activities and findings in the following paper:
+                </p>
+
+                <p class="paper-reference">
+                    Feger, Sebastian S., Sünje Dallmeier-Tiessen, Paweł W. Woźniak, and
+                    Albrecht Schmidt. <b>"Gamification in Science: A Study of Requirements in the
+                        Context of Reproducible Research."</b> In Proceedings of the 2019 CHI Conference on
+                    Human Factors in Computing Systems, pp. 1-14. 2019.
+
+                    <a href="https://dl.acm.org/doi/10.1145/3290605.3300690?cid=99659365234"
+                        target="_blank">https://doi.org/10.1145/3290605.3300690</a>
+                </p>
+
+                <!--<div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-2"></div>
+                        <div class="col-xl-8">
+
+                            <div id="carousel-gamification" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carousel-gamification" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carousel-gamification" data-slide-to="1"></li>
+                                  <li data-target="#carousel-gamification" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="/images/research/analysis_sged.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <p class="carousel-item-caption">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="/images/research/analysis_sged.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <p class="carousel-item-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="/images/research/analysis_sged.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <p class="carousel-item-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-gamification" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-gamification" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+
+                        </div>
+                        <div class="col-xl-2"></div>
+                    </div>
+                </div><!-->
+            </div>
+
+            <div class="col-md-2">
+            </div>
+        </div>
+
+        <div class="row gray-background-row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 large-text-container">
+                <h5>Knowledge and resource management and sharing</h5>
+
+                <p>
+                    During my doctoral research, I studied knowledge and resource management for three years at CERN, a
+                    key research laboratory
+                    in particle physics. The goal of my studies was to understand how researchers can be supported and
+                    motivated to document, preserve,
+                    and share their data analyses in a structured way that makes their research accessible and reusable.
+                    This is a highly important topic that
+                    is closely related to the notion of openness and reproducibility in science. Facilitating science
+                    reproducibility through the design
+                    of suitable cyberinfrastructure is important, as scientists are often not able to validate and reuse
+                    published work. In fact, it is a
+                    common understanding that science, across all research fields, faces a reproducibility crisis. A
+                    core issue lies in the effort required to
+                    conduct reproducible research. Documenting and sharing reusable resources is often perceived as
+                    unrewarding, because the traditional academic
+                    reputation economy focuses on novel contributions.
+                </p>
+
+                <p>
+                    CERN in particular, and particle physics in general, are great places to start understanding how
+                    interactive tools can support
+                    and motivate open and reproducible research. They represent one of the most data-intensive branches
+                    of science that deals with
+                    unique data management challenges. In this environment, I studied how data analysts exchange and
+                    reuse information, how and why they
+                    contribute to shared data management platforms, and what role research data management tools play in
+                    the analysis and sharing process.
+                    We mapped practices and needs in this data-intensive environment that we believe will become
+                    increasingly relevant to the industry and
+                    across the sciences, as they continue to face a growing amount of data.
+                </p>
+
+                <p>
+                    In our research, we found that knowledge and resource management tools that are closely tailored to
+                    a specific environment, institute, or
+                    experiment not only lower the effort required to make analyses reusable. They can even provide
+                    unique and meaningful rewards and incentives.
+                    We referred to <i>secondary usage forms</i> of tailored data management tools. Those are uses that,
+                    while not central to the core mission
+                    of the tools, provide meaningful benefits to contributors. At CERN, we mapped secondary usage forms
+                    related to uncertainty coping, simulation
+                    of useful collaboration, and the use of structured and automated workflows. The following paper
+                    provides a good starting point to read about
+                    our work on communication practices in particle physics and the design of secondary usage forms:
+                </p>
+
+                <p class="paper-reference">
+                    Feger, Sebastian S., Sünje Dallmeier-Tiessen, Albrecht Schmidt, and Paweł W. Woźniak. <b>"Designing
+                        for Reproducibility:
+                        A Qualitative Study of Challenges and Opportunities in High Energy Physics."</b> In Proceedings
+                    of the 2019 CHI Conference
+                    on Human Factors in Computing Systems, pp. 1-14. 2019.
+
+                    <a href="https://dl.acm.org/doi/10.1145/3290605.3300685?cid=99659365234"
+                        target="_blank">https://doi.org/10.1145/3290605.3300685</a>
+                </p>
+            </div>
+
+            <div class="col-md-2">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 large-text-container">
+                <h5>Hardware chip controlling and testing</h5>
+
+                <p>
+                    I have been invested in electronics, PCB design, and microcontroller programming for a long time.
+                    My first position after
+                    receiving my Master's degree was as a two-year fellow in an electronics group at CERN. My team
+                    developed an integrated circuit (ASIC)
+                    designed to manage the data exchange with the CERN detectors that are installed in underground
+                    facilities and exposed to high levels of
+                    radiation. The chip, called GBTx, is a complex device which is configured through more than 300
+                    8-bit registers. One of my priorities was
+                    to design a user interface that allows chip users and testers to control the GBTx efficiently and
+                    effectively, despite its complexity. I designed
+                    and evaluated user interfaces with particular regards to their usability and ability to visualize
+                    and communicate the internal state of the chip.
+                </p>
+
+                <p>
+                    Testing of a radiation-hard chip like the GBTx requires specialized radiation facilities. Those are
+                    rare and expensive. We travelled a few times
+                    to a facility in Belgium, where we had a couple of hours of radiation beam time to test the chip.
+                    Given those constraints, the control
+                    and testing software needed to be able to analyze and communicate test runs and results immediately,
+                    in order to allow for on-the-spot changes
+                    to the test flow. Overall, I developed a complete software framework for controlling and testing the
+                    GBTx chip. The framework further included
+                    a web service available to GBTx customers to configure the chip for their purposes. The web service
+                    differed from the control and test software,
+                    as it only made a subset of configuration registers available to the clients. Those were described
+                    in great detail in order to support non-experts
+                    with the chip configuration.
+                </p>
+
+                <p>
+                    In the following, I added references to the GBTx test setup and the software framework that I
+                    developed.
+                </p>
+
+                <p class="paper-reference">
+                    Leitao, P., S. Feger, D. Porret, S. Baron, K. Wyllie, M. Barros Marin, D. Figueiredo et al.
+                    <b>"Test bench development for the radiation Hard GBTX ASIC." </b>
+                    Journal of Instrumentation 10, no. 01 (2015): C01038.
+
+                    <a href="https://iopscience.iop.org/article/10.1088/1748-0221/10/01/C01038"
+                        target="_blank">https://iopscience.iop.org/article/10.1088/1748-0221/10/01/C01038</a>
+                </p>
+
+                <p class="paper-reference">
+                    Feger, S., S. Baron, M. Barros Marin, P. Leitao, P. Moreira, D. Porret, and K. Wyllie.
+                    <b>"A software package for the full GBTX lifecycle."</b> Journal of Instrumentation 10, no. 03 (2015): C03035.
+
+                    <a href="https://iopscience.iop.org/article/10.1088/1748-0221/10/03/C03035"
+                        target="_blank">https://iopscience.iop.org/article/10.1088/1748-0221/10/03/C03035</a>
+                </p>
+            </div>
+
+            <div class="col-md-2">
+            </div>
+        </div>
+
+        <div class="container-fluid" id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
