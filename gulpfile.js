@@ -2,24 +2,16 @@ var gulp        = require('gulp');
 var deploy      = require('gulp-gh-pages');
 const fileinclude = require('gulp-file-include');
 
-
-function myfileinclude(){
-
-  gulp.src(['index.html'])
-      .pipe(fileinclude({
-        prefix: '@@',
-        basepath: '@file'
-      }))
-      .pipe(gulp.dest('./'));
-}
-
-/**
- * Push build to gh-pages
+/*
+ * Processes include instructions in the src folder and outputs the result to the root
  */
-gulp.task('deploy', function () {
 
-  myfileinclude();
+gulp.task('fileinclude', function(){
 
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
+  return gulp.src("./src/**/*")
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
 });
