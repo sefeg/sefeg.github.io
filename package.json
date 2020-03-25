@@ -1,0 +1,24 @@
+{
+  "name": "sefeg.github.io",
+  "version": "1.0.0",
+  "description": "Personal web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sefeg/sefeg.github.io.git"
+  },
+  "author": "Sebastian Feger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sefeg/sefeg.github.io/issues"
+  },
+  "homepage": "https://github.com/sefeg/sefeg.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.1.1",
+    "gulp-gh-pages": "^0.5.4"
+  }
+}

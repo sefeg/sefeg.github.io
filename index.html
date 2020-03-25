@@ -13,7 +13,7 @@
     <script>
         $(document).ready(function () {
 
-            $('#header').load("common-elements/header.html");
+            //$('#header').load("common-elements/header.html");
             $('#overview-container').load("common-elements/profile-overview.html");
 
         });
@@ -28,9 +28,12 @@
 
 <body>
     <!-- Header is loaded into #header from reusable header.html -->
-    <div id="header"></div>
+    <!--<div id="header"></div>
 
-    </div>
+    </div><!-->
+
+    @@include('./common-elements/header.html')
+
 
     <div class="container-fluid" id="content-container">
 
