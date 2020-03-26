@@ -20,5 +20,8 @@
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.1.1",
     "gulp-gh-pages": "^0.5.4"
+  },
+  "dependencies": {
+    "lodash.template": "^4.5.0"
   }
 }
