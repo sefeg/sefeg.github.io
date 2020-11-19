@@ -10,4 +10,4 @@ This is my personal website (www.sebastian-feger.com). The website is based on a
 
 [Gulp file-include](https://www.npmjs.com/package/gulp-file-include) is used to pre-process include instructions for the common files (header, profile-overview). Source files with pre-process instructions are located in **/src**.
 
-Run *gulp fileinclude* to pre-process the source pages in the **/src** folder. The output is located in the root.
+Run *gulp fileinclude* to pre-process the source pages in the **/src** folder. The output is located in root.
